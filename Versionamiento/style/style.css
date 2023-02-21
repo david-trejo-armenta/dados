@@ -1,0 +1,549 @@
+#noneall a{
+  text-decoration:none;
+}
+
+.container{
+    width: 100%;
+    text-align: left;
+}
+.dado{
+    text-align: left;
+    display: inline-block;
+    margin: 30px;
+
+}
+.rotate {
+    animation: rotate .5s ease-in-out;
+    transform: rotateY(360deg);
+
+}
+
+.test {
+
+	margin-right:30px;	
+	margin-left:10px;	
+}
+.img1 {
+  text-align: left;
+	margin-right:0px;	
+	margin-left:300px;	
+}
+.img2 {
+  text-align: left;
+	margin-right:100px;	
+	margin-left:10px;	
+}
+.img {
+  text-align: left;
+	margin-right:0px;	
+	margin-left:440px;	
+}
+.Jugador1 {
+  
+	margin-right:0px;	
+	margin-left:350px;	
+  font-family: fantasy;
+  font-weight: 100;
+  font-size: x-large;
+  color:#fff;
+}
+.Jugador2 {
+  
+	margin-right:300px;	
+	margin-left:50px;	
+  font-family: fantasy;
+  font-weight: 100;
+  font-size: x-large;
+  color:#fff;
+}
+.Jugador1ind {
+  margin-top: -30px;
+	margin-right:300px;	
+	margin-left:500px;	
+  font-family: fantasy;
+  font-weight: 100;
+  font-size: x-large;
+  color:#fff;
+}
+b {
+	font-size: 50px;
+	color: rgb(255, 255, 255);
+  font-family: fantasy;
+  font-weight: 100;
+  margin-left:450px;
+}
+.c {
+	font-size: 50px;
+	color: rgb(255, 255, 255);
+  font-family: fantasy;
+  font-weight: 100;
+  margin-left:480px;
+  margin-right: 25px;
+}
+form {
+  font-size: 25px;
+	color: rgb(255, 255, 255);
+  font-family: fantasy;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: -10px;
+
+}
+
+h1 {
+	color: black;
+  margin-left: 460px;
+  font-family: fantasy;
+  font-weight: 100;
+}
+h2 {
+	color: black;
+  margin-left: 490px;
+  font-family: fantasy;
+  font-weight: 100;
+  margin-top: -10px;
+}
+
+p {
+	font-size: 30px;
+	color: black;
+  margin-top: 10px;
+  margin-left: 490px;
+  font-family: fantasy;
+  font-weight: 100;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}
+
+body{
+    background-color: green;
+    border: 20px solid rgba(216, 238, 14, 0.753);
+}
+container{
+  background-color: green;
+}
+
+.btn{
+    background: red;
+    font-family: Arial;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 16px 25px 16px 25px;
+
+}
+
+/* One player button*/
+
+.ov-btn-slide-left {
+  background: #fff; 
+  color: black; 
+  border: 2px solid black; 
+  font-size:30px;
+  padding: 16px 20px;
+  border-radius: 3px; 
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration:none;
+  font-family: fantasy;
+  margin-left: 440px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.ov-btn-slide-left:hover {
+  color: white; 
+}
+.ov-btn-slide-left::after {
+  content: "";
+  background: rgb(3, 1, 1); 
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  
+}
+.ov-btn-slide-left:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.ov-btn-slide-left {
+  background: #fff; 
+  color: black; 
+  border: 2px solid black; 
+  font-size:30px;
+  padding: 16px 20px;
+  border-radius: 3px; 
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+.ov-btn-slide-left:hover {
+  color: white; 
+}
+.ov-btn-slide-left::after {
+  content: "";
+  background: black; 
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.ov-btn-slide-left:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+/* two player button */
+
+.ov-btn-slide-right {
+  background: #fff; 
+  color: black; 
+  border: 2px solid black; 
+  font-size:30px;
+  padding: 16px 20px;
+  border-radius: 3px; 
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration:none;
+  font-family: fantasy;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 20px;
+}
+.ov-btn-slide-right:hover {
+  color: white; 
+}
+.ov-btn-slide-right::after {
+  content: "";
+  background: black; 
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.ov-btn-slide-right:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.ov-btn-slide-right {
+  background: #fff; 
+  color: black; 
+  border: 2px solid black; 
+  font-size:30px;
+  padding: 16px 20px;
+  border-radius: 3px; 
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+.ov-btn-slide-right:hover {
+  color: white; 
+}
+.ov-btn-slide-right::after {
+  content: "";
+  background: black; 
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.ov-btn-slide-right:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+/* Toss Button*/
+
+
+.ov-btn-slide-center {
+  background: #fff; 
+  color: black; 
+  border: 2px solid black; 
+  font-size:30px;
+  padding: 16px 20px;
+  border-radius: 3px; 
+  margin-left: -50px;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration:none;
+  font-family: fantasy;
+}
+.ov-btn-slide-center:hover {
+  color: white; 
+}
+.ov-btn-slide-center::after {
+  content: "";
+  background: black; 
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.ov-btn-slide-center:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.ov-btn-slide-center {
+  background: #fff; 
+  color: black; 
+  border: 2px solid black; 
+  font-size:30px;
+  padding: 16px 20px;
+  border-radius: 3px; 
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+.ov-btn-slide-center:hover {
+  color: white; 
+}
+.ov-btn-slide-center::after {
+  content: "";
+  background: black; 
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.ov-btn-slide-center:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+
+/* Home Button*/
+
+
+.ov-btn-slide-home {
+  background: #fff; 
+  color: black; 
+  border: 2px solid black; 
+  font-size:30px;
+  padding: 16px 20px;
+  border-radius: 3px; 
+  margin-top: 5px;
+  margin-left: 380px;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration:none;
+  font-family: fantasy;
+}
+.ov-btn-slide-home:hover {
+  color: white; 
+}
+.ov-btn-slide-home::after {
+  content: "";
+  background: black; 
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.ov-btn-slide-home:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.ov-btn-slide-home {
+  background: #fff; 
+  color: black; 
+  border: 2px solid black; 
+  font-size:30px;
+  padding: 16px 20px;
+  border-radius: 3px; 
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+.ov-btn-slide-home:hover {
+  color: white; 
+}
+.ov-btn-slide-home::after {
+  content: "";
+  background: black; 
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.ov-btn-slide-home:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+/* Home Button 2*/
+
+
+.ov-btn-slide-home-1 {
+  background: #fff; 
+  color: black; 
+  border: 2px solid black; 
+  font-size:30px;
+  padding: 16px 20px;
+  border-radius: 3px; 
+  margin-top: 5px;
+  margin-left: 380px;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration:none;
+  font-family: fantasy;
+}
+.ov-btn-slide-home:hover {
+  color: white; 
+}
+.ov-btn-slide-home::after {
+  content: "";
+  background: black; 
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.ov-btn-slide-home:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.ov-btn-slide-home {
+  background: #fff; 
+  color: black; 
+  border: 2px solid black; 
+  font-size:30px;
+  padding: 16px 20px;
+  border-radius: 3px; 
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+.ov-btn-slide-home:hover {
+  color: white; 
+}
+.ov-btn-slide-home::after {
+  content: "";
+  background: black; 
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.ov-btn-slide-home:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
