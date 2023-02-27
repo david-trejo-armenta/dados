@@ -1,5 +1,5 @@
-var player1 = "Player 1";
-var player2 = "Player 2";
+let player1 = "Player 1";
+let player2 = "Player 2";
 function bet(){
 
     
@@ -7,8 +7,8 @@ function bet(){
 }
 
 function tossdice() {
-    var guess = document.getElementsByTagName("input")[0].value;
-    var guessnum = parseInt(guess);
+let guess = document.getElementsByTagName("input")[0].value;
+let guessnum = parseInt(guess);
     console.log(guess)
     console.log("Function execution");
 
@@ -37,10 +37,10 @@ function tossdice() {
 
 function tossdice2() {
     setTimeout(function () {
-        var numeroaleatorio1 = Math.floor(Math.random() * 6) + 1;
-        var numeroaleatorio2 = Math.floor(Math.random() * 6) + 1;
+        let numeroaleatorio1 = Math.floor(Math.random() * 6) + 1;
+        let numeroaleatorio2 = Math.floor(Math.random() * 6) + 1;
 
-        var img1 = document.querySelector(".img1");
+        let img1 = document.querySelector(".img1");
         img1.setAttribute("src", "die" + numeroaleatorio1 + ".png");
         img1.classList.add("rotate");
 
