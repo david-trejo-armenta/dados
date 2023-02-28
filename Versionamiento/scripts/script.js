@@ -70,3 +70,4 @@ function mySubmit(obj) {
     var hash = hashObj.getHash("HEX");
     pwdObj.value = hash;
   }
+  
